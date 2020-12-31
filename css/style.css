@@ -1,0 +1,115 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: sans-serif;
+  max-width: 1200px;
+}
+
+h1,
+h2 {
+  margin: 20px 0;
+}
+
+h3 {
+  margin: 0 0 10px;
+  color: #9f69d5;
+}
+
+p {
+  padding-bottom: 20px;
+}
+
+button.start {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 2px solid #9f69d5;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  color: #9f69d5;
+  font-size: 16px;
+  text-align: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+button.start:hover {
+  background-color: #f7f4a6;
+}
+
+button.start:focus {
+  outline: none;
+}
+
+button.start.hide {
+  display: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.list-posts {
+  width: calc(100% - 300px);
+}
+
+.list-posts ul {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.list-posts li {
+  display: block;
+  border: 1px solid #9f69d5;
+  background-color: #ffffff;
+  padding: 10px;
+  word-wrap: break-word;
+  position: relative;
+}
+
+.list-posts li .like,
+.list-posts li .unlike {
+  color: #fe43b3;
+  font-size: 20px;
+  font-family: system-ui;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.list-like {
+  position: fixed;
+  top: 57px;
+  right: 0;
+  width: 300px;
+  background-color: #eee;
+  padding: 0 20px;
+}
+
+.list-like ul {
+  margin-left: 20px;
+}
+
+.list-like li {
+  margin: 20px 0;
+}
+/*# sourceMappingURL=style.css.map */
